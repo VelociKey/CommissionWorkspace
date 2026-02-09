@@ -1,0 +1,38 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.1"
+  },
+  "ReportID": "019c446e-be96-7d87-80af-885ea9b9a2d7",
+  "CreatedAt": "2026-02-09T17:03:54.3908866-05:00",
+  "ArtifactID": "sha256:f6a0b0909e02daf0e8985c5436edf5b6399d292986b520f99d00be70c19ed104",
+  "ArtifactName": "c:/Development/aMODERNBUILD/AntiGravityWorld/CommissionWorkspace",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "RepoURL": "https://github.com/VelociKey/CommissionWorkspace.git",
+    "Branch": "development",
+    "Commit": "f5e55c40ccf969212fb779b5913974916cb91db0",
+    "CommitMsg": "chore: Release Monitoring Check for CommissionWorkspace",
+    "Author": "Joseph A. White, III \u003cjoseph@VelociKey.com\u003e",
+    "Committer": "Joseph A. White, III \u003cjoseph@VelociKey.com\u003e"
+  },
+  "Results": [
+    {
+      "Target": "go.mod",
+      "Class": "lang-pkgs",
+      "Type": "gomod",
+      "Packages": [
+        {
+          "ID": "github.com/VelociKey/CommissionWorkspace",
+          "Name": "github.com/VelociKey/CommissionWorkspace",
+          "Identifier": {
+            "PURL": "pkg:golang/github.com/velocikey/commissionworkspace",
+            "UID": "d16eecc49a2b5efe"
+          },
+          "Relationship": "root",
+          "AnalyzedBy": "gomod"
+        }
+      ]
+    }
+  ]
+}

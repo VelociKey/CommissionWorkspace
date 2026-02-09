@@ -1,0 +1,86 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:f4d23755-a3d7-413b-a209-536aeb12965c",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-02-09T22:04:04+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.69.1"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "bc4f9461-a71d-447c-8899-9443a44358ef",
+      "type": "application",
+      "name": "c:/Development/aMODERNBUILD/AntiGravityWorld/CommissionWorkspace",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "315cf894-d7fe-4380-bb92-76f4bb4ca9ea",
+      "type": "application",
+      "name": "go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/velocikey/commissionworkspace",
+      "type": "library",
+      "name": "github.com/VelociKey/CommissionWorkspace",
+      "purl": "pkg:golang/github.com/velocikey/commissionworkspace",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/VelociKey/CommissionWorkspace"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "315cf894-d7fe-4380-bb92-76f4bb4ca9ea",
+      "dependsOn": [
+        "pkg:golang/github.com/velocikey/commissionworkspace"
+      ]
+    },
+    {
+      "ref": "bc4f9461-a71d-447c-8899-9443a44358ef",
+      "dependsOn": [
+        "315cf894-d7fe-4380-bb92-76f4bb4ca9ea"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/velocikey/commissionworkspace",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}
